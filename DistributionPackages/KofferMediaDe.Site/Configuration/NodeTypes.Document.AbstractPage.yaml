@@ -1,0 +1,14 @@
+'KofferMediaDe.Site:Document.AbstractPage':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Document': true
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'KofferMediaDe.Site:Constraint.Content.Restricted': false
+  constraints:
+    nodeTypes:
+      'KofferMediaDe.Site:Document.HomePage': false
+      'KofferMediaDe.Site:Constraint.Document.Restricted': false
